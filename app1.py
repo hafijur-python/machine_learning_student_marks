@@ -6,7 +6,7 @@ from flask import Flask, request, render_template
 import joblib
      
 app = Flask(__name__)
-model = joblib.load(r"/Users/hafijurrhaman/Downloads/python-data-Ai/generative_ai_class/student_marks_prediction_deployment/student_mark_predictor.pkl")
+model = joblib.load(r"./student_mark_predictor.pkl")
 
 
 df = pd.DataFrame()
